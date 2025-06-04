@@ -1,9 +1,9 @@
 INSERT INTO tb_category (description) VALUES ('Curso');
 INSERT INTO tb_category (description) VALUES ('Oficina');
 
-INSERT INTO tb_block (startTime, endTime) VALUES ('2017-09-25 08:00:00', '2017-09-25 11:00:00');
-INSERT INTO tb_block (startTime, endTime) VALUES ('2017-09-25 14:00:00', '2017-09-25 18:00:00');
-INSERT INTO tb_block (startTime, endTime) VALUES ('2017-09-26 08:00:00', '2017-09-26 11:00:00');
+INSERT INTO tb_block (start_time, end_time) VALUES ('2017-09-25 08:00:00', '2017-09-25 11:00:00');
+INSERT INTO tb_block (start_time, end_time) VALUES ('2017-09-25 14:00:00', '2017-09-25 18:00:00');
+INSERT INTO tb_block (start_time, end_time) VALUES ('2017-09-26 08:00:00', '2017-09-26 11:00:00');
 
 INSERT INTO tb_attendant (name, email) VALUES ('José Silva', 'jose@gmail.com');
 INSERT INTO tb_attendant (name, email) VALUES ('Tiago Faria', 'tiago@gmail.com');
