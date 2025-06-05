@@ -3,6 +3,7 @@ package com.luizbarros.domain_model_orm.entities;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 
 import jakarta.persistence.Column;
@@ -100,5 +101,22 @@ public class Activity {
 
 	public List<Block> getBlocks() {
 		return blocks;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Activity other = (Activity) obj;
+		return Objects.equals(id, other.id);
 	}	
 }
